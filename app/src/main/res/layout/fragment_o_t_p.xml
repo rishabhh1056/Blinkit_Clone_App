@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50.00dp"
+            android:layout_height="50.00dp"
+            android:layout_marginLeft="10.00dp"
+            android:id="@+id/backbtn"
+            android:layout_marginTop="10.00dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:gravity="center">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="OTP Verification"
+               android:layout_gravity="center"
+               android:textColor="@color/black"
+               android:textSize="16.00sp"
+               android:textStyle="bold"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.00dp"
+        android:background="@color/black" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.00dp"
+        android:text="we have sent a verification code to"
+        android:textColor="@color/black"
+        android:textSize="16.00sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="30.00dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.00dp"
+            android:layout_gravity="center"
+            android:text="+91"
+            android:textColor="@color/black"
+            android:textSize="16.00sp"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number"
+            android:layout_marginTop="5.00dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16.00sp"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/repeatpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Enter Pin"
+        android:layout_marginStart="25.00dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/PinView"
+        app:layout_constraintEnd_toEndOf="@+id/PinView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PinView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <LinearLayout
+        android:id="@+id/PinView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_marginRight="20.00dp"
+        android:layout_marginLeft="20.00dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/otp1"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_margin="5.00dp"
+            android:background="@drawable/text_bg"
+            android:padding="10.00dp"
+            android:inputType="number"
+            android:hint="1"
+            android:textSize="20.00sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:id="@+id/otp2"
+            android:layout_margin="5.00dp"
+            android:background="@drawable/text_bg"
+            android:padding="10.00dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="1"
+            android:textSize="20.00sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:id="@+id/otp3"
+            android:layout_margin="5.00dp"
+            android:background="@drawable/text_bg"
+            android:padding="10.00dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="1"
+            android:textSize="20.00sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:id="@+id/otp4"
+            android:layout_margin="5.00dp"
+            android:background="@drawable/text_bg"
+            android:padding="10.00dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="1"
+            android:textSize="20.00sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:id="@+id/otp5"
+            android:layout_margin="5.00dp"
+            android:background="@drawable/text_bg"
+            android:padding="10.00dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="1"
+            android:textSize="20.00sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:id="@+id/otp6"
+            android:inputType="number"
+            android:layout_margin="5.00dp"
+            android:background="@drawable/text_bg"
+            android:padding="10.00dp"
+            android:hint="1"
+            android:textSize="20.00sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otpVerifyBtn"
+        android:text="verify OTP"
+        android:layout_marginTop="20.00dp"
+        android:layout_marginLeft="80.00dp"
+        android:textSize="16.00sp"
+        android:layout_marginRight="80.00dp"
+        android:backgroundTint="#1E88E5"/>
+
+
+</LinearLayout>

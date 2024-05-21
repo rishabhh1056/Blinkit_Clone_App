@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SinginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400.00dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/gerocery"/>
+
+        <ImageView
+            android:layout_width="80.00dp"
+            android:layout_height="80.00dp"
+            android:src="@drawable/blinkit_icon"
+            android:layout_marginTop="10.00dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India's last minute app"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20.00dp"
+            android:textSize="16.00sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login or Signup"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="16.00sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phNumber"
+            android:hint="Enter mobile number"
+            android:layout_marginLeft="20.00dp"
+            android:layout_marginRight="20.00dp"
+            android:layout_marginTop="10.00dp"
+            android:maxLines="1"
+            android:maxEms="10"
+            android:inputType="number"
+            android:drawableLeft="@drawable/baseline_call_24"
+            android:drawablePadding="10.00dp"
+            android:textSize="16.00sp"
+            android:background="@drawable/text_bg"
+            android:padding="16.00dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/continue_btn"
+            android:text="Continue"
+            android:textColor="#F6F6F6"
+            android:textSize="16.00sp"
+            android:padding="15.00dp"
+            android:background="@drawable/text_bg"
+            android:layout_marginTop="10.00dp"
+            android:layout_marginLeft="20.00dp"
+            android:layout_marginRight="20.00dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
